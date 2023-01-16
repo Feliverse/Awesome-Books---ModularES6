@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awesome Books | Feliverse</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="main-container">
+    <header class="header">
+      <nav class="navigation">
+        <p class="nav-title">Awesome Books</p>
+        <div class="nav-btns">
+          <label class="nav-Book-label">
+            <input name="nav-Book" type="radio" id="listBook" onclick="goList()" class="nav-btn">
+            </input>
+            <span>List</span>
+          </label>
+          <hr class="nav-divider">
+          <label class="nav-Book-label" for="addNewBook">
+            <input name="nav-Book" type="radio" id="addNewBook" onclick="goAdd()" class="nav-btn"></input>
+            <span>Add new</span>
+          </label>
+          <hr class="nav-divider">
+          <label class="nav-Book-label" for="contactBook">
+            <input name="nav-Book" type="radio" id="contactBook" onclick="goContact()" class="nav-btn"></input>
+            <span>Contact</span>
+          </label>
+        </div>
+      </nav>
+      <div id="clock" class="clock">
+      <span id="clock-time"></span>
+    </div>
+    </header>
+   
+    <section id="listTab" class="list-tab">
+      <h1>Awesome books</h1>
+      <div class="books-ph" id="book"></div>
+    </section>
+    <section id="addNewTab" class="add-new-tab">
+      <h2>Add a new book</h2>
+      <div class="input-container">
+        <input class="input" id="title" type="text" placeholder="Title" />
+        <input class="input" id="author" type="text" placeholder="Author" />
+        <button class="input-btn" id="addBtn" type="button" onclick="getInputValues()">Add</button>
+      </div>
+    </section>
+    <section id="contactTab" class="contact-tab">
+      <h2 class="contact-title">Contact Information</h2>
+      <span class="contact-hi">Do you have any questions or you just want to say "Hello"?<br> you can reach out to
+        us!</span>
+      <ul>
+        <li class="contact-list-item">Our e-mail: mail@mail.com</li>
+        <li class="contact-list-item">Our phone number: 001256789</li>
+        <li class="contact-list-item">Our address: Streetname 22, 8503 City, Country</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p>copyright - Feliverse</p>
+    </footer>
+  </div>
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
