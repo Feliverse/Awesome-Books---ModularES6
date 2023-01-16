@@ -1,5 +1,7 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .main-container {
@@ -20,7 +22,7 @@ body {
 
 .nav-title {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -35,8 +37,8 @@ body {
   display: none;
 }
 
-.nav-radio-label {
-  font-size: 1.03rem;
+.nav-Book-label {
+  font-size: 1rem;
   font-weight: 600;
   border: none;
   background-color: transparent;
@@ -44,38 +46,36 @@ body {
 }
 
 input[type="radio"]:checked + span {
-  color: blue;
-}
-
-.nav-divider {
-  width: 2px;
-  height: 1.9rem;
-  background-color: black;
-  border: none;
+  color: rgb(28, 202, 28);
+  border-bottom: 2px rgb(28, 202, 28) solid;
 }
 
 .clock {
   font-weight: 600;
+  line-height: 3;
   text-align: right;
-  margin: 0.1rem 0 3rem;
+}
+
+h1, h2 {
+  font-size: 3rem;
 }
 
 .list-tab {
   display: none;
 }
 
-.add-new-tabb {
+.add-new-tab {
   display: block;
   width: 70%;
   margin: auto;
 }
 
 .books-ph {
+  max-width: 80%;
   max-height: 50vh;
   overflow-y: scroll;
   border: 3px solid black;
-  border-radius: 3px;
-  margin-bottom: 3rem;
+  margin: 3% auto;
 }
 
 .books-ph::-webkit-scrollbar {
@@ -94,6 +94,7 @@ input[type="radio"]:checked + span {
 }
 
 .book-title {
+  padding-left: 1%;
   font-weight: 700;
   line-height: 2.2rem;
   margin: 0;
@@ -112,7 +113,7 @@ input[type="radio"]:checked + span {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  width: 70%;
+  width: 65%;
   gap: 1rem;
   margin: auto;
 }
@@ -121,8 +122,8 @@ input[type="radio"]:checked + span {
   width: 100%;
   border: 2px solid black;
   border-radius: 3px;
-  padding: 0.3rem;
-  font-size: 1.06rem;
+  padding: 0.4rem;
+  font-size: 1rem;
   font-weight: 600;
   box-sizing: border-box;
 }
@@ -134,7 +135,7 @@ input[type="radio"]:checked + span {
   border-radius: 3px;
   padding: 0.3rem;
   background-color: white;
-  font-size: 1.06rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -146,11 +147,11 @@ input[type="radio"]:checked + span {
 }
 
 .contact-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 3rem;
 }
 
-.contact-question,
+.contact-hi,
 .contact-list-item {
   font-size: 1.06rem;
   font-weight: 700;
@@ -163,11 +164,10 @@ input[type="radio"]:checked + span {
 .footer {
   margin-top: auto;
   display: flex;
-  justify-self: end;
   bottom: 0.7rem;
   padding: 0.5rem 2rem;
   border: 3px solid black;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
-  line-height: 0.5rem;
+  line-height: 0.8rem;
 }
